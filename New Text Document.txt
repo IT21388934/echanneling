@@ -1,0 +1,45 @@
+package com.hospital;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/addHospital")
+public class addHospital extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		
+		String h_name = request.getParameter("hospital_name");
+		String h_email = request.getParameter("hospital_email");
+		String h_address = request.getParameter("hospital_address");
+		String h_phone = request.getParameter("hospital_contact");
+		
+		
+		
+		boolean isTrue;
+		
+		isTrue= hospitalDbUtil.addHospital(h_name, h_email, h_address, h_phone);
+		
+		if(isTrue == true) {
+			
+			RequestDispatcher dos = request.getRequestDispatcher("Succcess.jsp");
+			
+		}
+		
+		else {
+			
+			RequestDispatcher dis2 =request.getRequestDispatcher("Unsucccess.jsp");
+		}
+	
+		
+	}
+
+}

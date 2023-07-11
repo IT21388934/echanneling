@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign up</title>
+    <link rel="stylesheet" type="text/css" href="css/addStryle.css">
+
+    <style type="text/css">
+        body {
+            background-image: url(images/istockphoto-968376804-612x612.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <a href="index.html"><img src="images/main logo.png" style="width: 300px; height: 70px;" /></a>
+    </div>
+
+    <div class="topupcard">
+
+        <form method="post" action="#">
+            <div class="signupF">
+                <h3>Login Here</h3>
+                <label>Type username</label>
+                <input type="text" id="username" name="username" placeholder="User Name" required><br><br>
+                <label>Type a password</label>
+                <input type="password" id="passcode" name="password" placeholder="Password" required>
+
+                <div class="formB">
+                    <input type="submit" id="msg" value="Sign Up">
+                    <input type="reset" value="Clear">
+                </div>
+            </div>
+
+            <br>
+
+            <script>
+                document.getElementById("msg").onclick = function () {
+                    alert("Details Added Successfully");
+                }
+            </script>
+        </form>
+    </div>
+</body>
+
+
+</html>

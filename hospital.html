@@ -1,0 +1,314 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>e-care Hospital List </title>
+    <link rel="stylesheet" type="text/css" href="css/newdash.css">
+
+</head>
+
+<body>
+    <div class="topbar">
+        <div class="logo">
+            <img src="images/main logo.png">
+        </div>
+
+        <div class="option navi1">
+            <ul>
+                <li><a href="#">Find Doctor</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="option login_logout">
+            <ul>
+                <li><button class="button2"><a href="#">Logout</a></button></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dashboard_container">
+        <div class="adamindash_navigator">
+            <ul>
+                <li>
+                    <a href="#">
+                        <!-- <span class="icon">
+                            <img src="images/icons/dashboard.png">
+                        </span> -->
+                        <span class="title">Jimi Carter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="images/icons/dashboard.png" height="15px">
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#doctorappointment">
+                        <span class="icon">
+                            <img src="images/icons/doctor appointment.png" height="15px">
+                        </span>
+                        <span class="title">Doctor Appointment</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#labappointment">
+                        <span class="icon">
+                            <img src="images/icons/labappointment.png" height="15px">
+                        </span>
+                        <span class="title">Lab Appointment</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Doctorlist">
+                        <span class="icon">
+                            <img src="images/icons/doctor.png" height="15px">
+                        </span>
+                        <span class="title">Doctors list</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#lablist">
+                        <span class="icon">
+                            <img src="images/icons/lab.png" height="15px">
+                        </span>
+                        <span class="title">Lab list</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#labtestlist">
+                        <span class="icon">
+                            <img src="images/icons/labtest.png" height="15px">
+                        </span>
+                        <span class="title">Lab test list</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#Hospitallist">
+                        <span class="icon">
+                            <img src="images/icons/hospital.png" height="15px">
+                        </span>
+                        <span class="title">Hospital list</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="images/icons/report.png" height="15px">
+                        </span>
+                        <span class="title">Reports</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- end of the admindash_navigator -->
+        <div class="sec_bar">
+            <div class="secondary_bar">
+                <div class="toggle2">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <!-- end of the toggle2 -->
+                <div class="Pagename">
+                    <!-- end of the toggle2 -->
+                    <div class="Admindashbard"></div>
+                </div>
+                <!-- end of the page name -->
+                <div class="leftconner">
+                    <div class="searchicon">
+                        <ion-icon name="search-outline" id="search" onclick="toggleSearch()"></ion-icon>
+                    </div>
+
+                    <div class="search_pop_up" id="searchdrop">
+                        <div class="searchPop">
+                            <!-- <div class="closeBtn">
+                                <ion-icon name="close-outline"></ion-icon>
+                            </div> -->
+                            <form>
+                                <label>
+                                    <input type="text" class="search_type" placeholder="Search">
+                                </label>
+
+                                <div class="search_options">
+                                    <div class="searchOption no1"><input type="checkbox" name="Doctor"
+                                            value="Doctor">Doctor</div>
+                                    <div class="searchOption no1"><input type="checkbox" name="Lab" value="Doctor">Lab
+                                    </div>
+                                    <div class="searchOption no1"><input type="checkbox" name="Hospital"
+                                            value="Doctor">Hospital</div>
+                                </div>
+
+                                <div class="submit_search">
+                                    <input type="submit">
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="user">
+                        <img src="images/user.jpg" class="userpic" onclick="toggleProfile()">
+                    </div>
+
+                    <div class="sub_manu_dropdown" id="submanudrop">
+                        <div class="submanu">
+                            <div class="userInfroInDropDown">
+                                <img src="images/user.jpg">
+                                <h3 class="profileName">Admin Name</h3>
+                            </div>
+                            <hr>
+
+                            <a href="#" class="sub-menu-link">
+                                <ion-icon name="person-outline"></ion-icon>
+                                <p> View Profile</p>
+                                <span>></span>
+                            </a>
+                            <a href="#" class="sub-menu-link">
+                                <ion-icon name="log-out-outline"></ion-icon>
+                                <p>Go to home</p>
+                                <span>></span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- end of secondary_bar -->
+            </div>
+            <!-- end of sec_bar -->
+            <!--------------------card------------------------- -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">155</div>
+                        <div class="cardName">Doctors</div>
+                    </div>
+                    <div class="iconbx">
+                        <img src="images/icons/doctor.png" height="35px">
+                    </div>
+                </div>
+                <!-- end of the card -->
+                <div class="card">
+                    <div>
+                        <div class="numbers">1567</div>
+                        <div class="cardName">Patients</div>
+                    </div>
+                    <div class="iconbx">
+                        <img src="images/icons/patient.png" height=" 35px">
+                    </div>
+                </div>
+                <!-- end of the card -->
+                <div class="card">
+                    <div>
+                        <div class="numbers">15</div>
+                        <div class="cardName">labs</div>
+                    </div>
+                    <div class="iconbx">
+                        <img src="images/icons/lab.png" height="35px">
+                    </div>
+                </div>
+                <!-- end of the card -->
+                <div class="card">
+                    <div>
+                        <div class="numbers">56</div>
+                        <div class="cardName">Hospitals</div>
+                    </div>
+                    <div class="iconbx">
+                        <img src="images/icons/hospital.png" height="35px">
+                    </div>
+                </div>
+                <!-- end of the card -->
+            </div>
+            <!-- end of the cardbox -->
+            <!-- Data list -->
+            <div class="details">
+
+                <!-- ---------------------Hospital List-------------------------------- -->
+                <div class="table hl" id="Hospitallist">
+                    <div class="cardHolder">
+                        <h2>List of the Hospitals</h2>
+
+                        <div>
+                            <a href="#" class="btn">Add</a>
+                            <a href="#" class="btn">Edit </a>
+                            <a href="#" class="btn">Delete</a>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Hospital ID</td>
+                                <td>Name</td>
+                                <td>Address</td>
+                                <td>Email</td>
+                                <td>Contact Number</td>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>00001</td>
+                                <td>Abc hospital</td>
+                                <td>colombo7</td>
+                                <td>contact@abc.com</td>
+                                <td>07033435665</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- cardHolder -->
+                </div>
+
+
+            </div>
+            <!-- end of the data list -->
+        </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <!-- end of the dashboard_container -->
+        <!-- menu toggle -->
+        <script>
+            let toggle2 = document.querySelector('.toggle2');
+            let adamindash_navigator = document.querySelector('.adamindash_navigator');
+            let sec_bar = document.querySelector('.sec_bar');
+
+            toggle2.onclick = function () {
+                adamindash_navigator.classList.toggle('active');
+                sec_bar.classList.toggle('active');
+            }
+
+        </script>
+        <script>
+            // add hovered class in selected list item
+            let list = document.querySelectorAll('.adamindash_navigator li');
+            function activeLink() {
+                list.forEach((item) =>
+                    item.classList.remove('hovered'));
+                this.classList.add('hovered');
+            }
+            list.forEach((item) =>
+                item.addEventListener('mouseover', activeLink));
+        </script>
+        <script>
+            let sub_manu_dropdown = document.getElementById("submanudrop")
+
+            function toggleProfile() {
+                sub_manu_dropdown.classList.toggle("sub_manu_dropdown_openmanue");
+            }
+        </script>
+        <script>
+            let search_pop_up = document.getElementById("searchdrop")
+
+            function toggleSearch() {
+                search_pop_up.classList.toggle("search_pop_upOpen");
+            }
+        </script>
+</body>
+
+</html>

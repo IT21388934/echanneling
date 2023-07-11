@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+body {
+    background-image: url("../images/istockphoto-968376804-612x612.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    height: 110%;
+}
+
+.topbar ul {
+    list-style-type: none;
+}
+
+.logo img {
+    width: 250px;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.topbar {
+    top: 0px;
+    height: 80px;
+    background-color: #E5E5E5;
+    /*gray*/
+}
+
+.option0 button {
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    background-color: #00C9FF;
+    padding: 15px 32px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: "Arial";
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.option0 {
+    position: absolute;
+    right: 50px;
+    top: 7px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.option0 li {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.option0 a {
+    color: white;
+}
+
+
+.option1 {
+    position: absolute;
+    right: 400px;
+    top: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.option1 li a {
+    width: 130px;
+    color: black;
+    font-family: "Arial";
+}
+
+.option1 li {
+    margin-right: 40px;
+    display: inline-block;
+}
+
+.fview {
+    position: relative;
+    top: -50px;
+}
+
+.info {
+    position: relative;
+    top: 130px;
+    left: 150px;
+}
+
+.infoH {
+    font-size: 30px;
+    font-family: "Arial";
+}
+
+.infop {
+    font-size: 16px;
+    font-family: "Arial";
+}
+
+.pic img {
+    position: relative;
+    top: -130px;
+    left: 55%;
+    width: 500px;
+    height: 500px;
+}
+
+.infoB button {
+
+    position: relative;
+    top: -350px;
+    left: 150px;
+}
+
+.button {
+    border-radius: 10px;
+    background-color: #00C9FF;
+    /*light blue*/
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Arial";
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+.button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+footer {
+    background-color: #E5E5E5;
+    height: 400px;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #E5E5E5;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 15px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #00C9FF;
+    font-size: 36px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.both div {
+    top: 20px;
+    display: inline-block
+}
+
+.both p {
+    font-size: 16px;
+    font-family: "Arial";
+}
+
+.app a {
+    margin-right: 10px;
+}
+
+.app {
+    position: relative;
+    left: 100px;
+}
+
+.link a {
+    margin-right: 10px;
+}
+
+.link {
+    position: relative;
+    left: 600px;
+}
+
+.copy p {
+    position: relative;
+    top: 50px;
+    font-size: 12px;
+    font-family: "Arial";
+}
+
+.f li {
+    display: inline-block;
+    font-size: 20px;
+    font-family: "Arial";
+    padding: 30px;
+}
+
+.f a {
+    color: black;
+}
+
+.line {
+    margin: 0;
+    padding: 0px;
+    width: 80%;
+}
+
+
+.secondbar {
+    overflow: hidden;
+    background-color: #00C9FF;
+    height: 80px;
+}
+
+.secondbar div {
+    display: inline-block;
+}
+
+.searchbar {
+    position: relative;
+    top: -12px;
+    left: 670px;
+}
+
+.searchbar input {
+    background-color: white;
+    width: 500px;
+    height: 30px;
+    border-radius: 10px;
+
+}
+
+.line {
+    position: relative;
+    top: 24px;
+    left: 20px;
+}
+
+.secondbar .searchbar button {
+    color: white;
+    border-radius: 10px;
+    background-color: #00C9FF;
+    /*light blue*/
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Arial";
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+}
+
+.secondbar .searchbar button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+::placeholder {
+    color: black;
+    font-family: Arial;
+    font-size: 16px;
+}
+
+.title h2 {
+    font-family: "Arial";
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    display: inline-block;
+}
+
+.box {
+    background-color: #E5E5E5;
+    border-radius: 10px;
+    height: 250px;
+}
+
+.title {
+    position: relative;
+    top: 30px;
+    left: 80px;
+}
+
+.form {
+    background-color: white;
+    border-radius: 10px;
+    height: 300px;
+    width: 800px;
+    position: relative;
+    top: 50px;
+    left: 80px;
+}
+
+.nurse img {
+    position: absolute;
+    top: 200px;
+    right: 70px;
+    height: 300px;
+    width: 290px;
+}
+
+.appointments select {
+    color: black;
+    font-size: 18px;
+    font-family: "Arial";
+    border-radius: 10px;
+    text-align: center;
+}
+
+.appointments label {
+    color: black;
+    font-size: 18px;
+    font-family: "Arial";
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+.inside {
+    position: relative;
+    top: 50px;
+    left: 100px;
+}
+
+.appointments input {
+    color: black;
+    font-size: 18px;
+    font-family: "Arial";
+    border-radius: 10px;
+    text-align: center;
+}
+
+.appointments li {
+    margin-right: 100px;
+    display: inline-block;
+}
+
+
+.confirm {
+    position: relative;
+    right: 250px;
+    top: -40px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.confirm button {
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    background-color: #00C9FF;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: "Arial";
+    font-size: 18px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.confirm input {
+    background-color: #00C9FF;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    color: white;
+}
+
+
+.confirm li {
+    margin-right: 60px;
+    display: inline-block;
+    font-family: "Arial";
+    font-size: 18px;
+
+}
+
+
+.topupcard form {
+    float: right;
+    height: 449px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+
+.signupF label {
+    font-family: "Arial";
+    font-size: 16px;
+
+}
+
+.signupF h3 {
+    font-family: "Arial";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+.signupF input {
+    font-family: "Arial";
+    outline-color: none;
+    border-color: #00C9FF;
+    display: block;
+    height: 50px;
+    width: 94%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+.formB input {
+
+    display: block;
+    color: white;
+    height: 50px;
+    width: 97%;
+    background-color: #00C9FF;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+.signupA {
+    font-family: "Arial";
+    display: block;
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.loginBox a {
+    margin-right: 10px;
+}
+
+.loginBox {
+    position: relative;
+    left: 600px;
+}
+
+.profile_topupcard {
+    float: right;
+    height: 353px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+}
+
+.profile_image {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    left: 38%;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+
+.profile_image {
+    position: absolute;
+    top: 25%;
+}
+
+.profile_image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile_card h3 {
+    position: absolute;
+    left: 34%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+.topupcard2 form {
+    float: right;
+    /* height: 353px; */
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 55%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 29px 61px;
+}
+
+/* .signupF2 label {
+    font-family: "Arial";
+    font-size: 18px;
+
+}
+
+.signupF2 h3 {
+    font-family: "Arial";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
+
+.signupF2 input {
+    font-family: "Arial";
+    outline-color: none;
+    border-color: #00C9FF;
+    display: block;
+    height: 50px;
+    width: 94%;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+} */
+
+.signupF img {
+    width: 331px;
+    left: 10%;
+}
+
+.admiindetails {
+    top: 70%;
+    left: 12%;
+    position: absolute;
+    font-size: 14px;
+}
+
+.admiindetails table tr td {
+    padding-right: 15px;
+}
+
+.admiindetails table tr td.td11 {
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+.AdminProfile_AdminName {
+    position: absolute;
+    padding: 5px;
+    width: auto;
+    padding-bottom: 10px;
+    left: 38%;
+    top: 55%;
+}

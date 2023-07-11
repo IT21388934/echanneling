@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Lab Test</title>
+    <link rel="stylesheet" type="text/css" href="css/addStryle.css">
+
+    <style type="text/css">
+        body {
+            background-image: url(images/istockphoto-968376804-612x612.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo">
+        <a href="index.html"><img src="images/main logo.png" style="width: 300px; height: 70px;" /></a>
+    </div>
+
+    <div class="topupcard">
+
+        <form method="post" action="#">
+            <div class="signupF">
+                <h3>ADD THE LAB TEST</h3>
+                <label>Test Name</label>
+                <input type="text" id="test namw" name="test_Name" placeholder="Enter the Test Name here"
+                    required><br><br>
+
+                <div class="formB">
+                    <input type="submit" id="msg" value="Add test">
+                    <input type="reset" value="Clear">
+                </div>
+            </div>
+
+            <br>
+
+            <script>
+                document.getElementById("msg").onclick = function () {
+                    alert("Details Added Successfully");
+                }
+            </script>
+
+
+        </form>
+    </div>
+</body>
+
+
+</html>

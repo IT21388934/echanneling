@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>e-care Admin dashboard</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="dashboard_container">
+        <div class="adamindash_navigator">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"></span>
+                        <span class="title">ADMIN DASHBOARD</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="images/icons/dashboard.png" height="15px">
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="images/icons/doctor appointment.png" height="15px">
+                        </span>
+                        <span class="title">Doctor Appointment</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="images/icons/labappointment.png" height="15px">
+                        </span>
+                        <span class="title">Lab Appointment</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="images/icons/doctor.png" height="15px">
+                        </span>
+                        <span class="title">Doctors list</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="images/icons/lab.png" height="15px">
+                        </span>
+                        <span class="title">Lab list</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="images/icons/hospital.png" height="15px">
+                        </span>
+                        <span class="title">Hospital list</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <img src="images/icons/report.png" height="15px">
+                        </span>
+                        <span class="title">Reports</span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+        <!-- end of the admindash_navigator -->
+        <div class="sec_bar">
+            <div class="secondary_bar">
+                <div class="toggle2">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+                <div class="search2">
+                    <!-- end of the toggle2 -->
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <!-- end of the search -->
+                <div class="user">
+                    <img src="images/user.jpg">
+                </div>
+                <!-- end of secondary_bar -->
+            </div>
+            <!-- end of sec_bar -->
+            <!--------------------card------------------------- -->
+            <div class="cardBox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">155</div>
+                        <div class="cardName">Doctors</div>
+                    </div>
+                    <div class="iconbx">
+                        <img src="images/icons/doctor.png" height="35px">
+                    </div>
+                </div>
+                <!-- end of the card -->
+                <div class="card">
+                    <div>
+                        <div class="numbers">1567</div>
+                        <div class="cardName">Patients</div>
+                    </div>
+                    <div class="iconbx">
+                        <img src="images/icons/patient.png" height=" 35px">
+                    </div>
+                </div>
+                <!-- end of the card -->
+                <div class="card">
+                    <div>
+                        <div class="numbers">15</div>
+                        <div class="cardName">labs</div>
+                    </div>
+                    <div class="iconbx">
+                        <img src="images/icons/lab.png" height="35px">
+                    </div>
+                </div>
+                <!-- end of the card -->
+                <div class="card">
+                    <div>
+                        <div class="numbers">56</div>
+                        <div class="cardName">Hospitals</div>
+                    </div>
+                    <div class="iconbx">
+                        <img src="images/icons/hospital.png" height="35px">
+                    </div>
+                </div>
+                <!-- end of the card -->
+            </div>
+            <!-- end of the cardbox -->
+            <!-- Data list -->
+            <div class="details">
+                <div class="searchOrder">
+                    <div class="cardHolder">
+                        <h2>Recent appointments</h2>
+                    </div>
+                </div>
+
+            </div>
+            <!-- end of the data list -->
+        </div>
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <!-- end of the dashboard_container -->
+        <!-- menu toggle -->
+        <script>
+            let toggle2 = document.querySelector('.toggle2');
+            let adamindash_navigator = document.querySelector('.adamindash_navigator');
+            let sec_bar = document.querySelector('.sec_bar');
+
+            toggle2.onclick = function () {
+                adamindash_navigator.classList.toggle('active');
+                sec_bar.classList.toggle('active');
+            }
+
+        </script>
+        <script>
+            // add hovered class in selected list item
+            let list = document.querySelectorAll('.adamindash_navigator li');
+            function activeLink() {
+                list.forEach((item) =>
+                    item.classList.remove('hovered'));
+                this.classList.add('hovered');
+            }
+            list.forEach((item) =>
+                item.addEventListener('mouseover', activeLink));
+        </script>
+</body>
+
+</html>
